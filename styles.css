@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.page-container {
+  display: flex;
+  justify-content: center;
+}
+.sidebar-container {
+  background-image: url(assets/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100vh;
+  color: white;
+}
+
+.logo-container {
+  font-family: Norse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+  height: 110px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.odin-logo {
+  width: 70px;
+  height: 90px;
+}
+
+.odin-text {
+  font-size: 70px;
+  margin-top: 30px;
+  margin-bottom: auto;
+}
+
+.background-credit {
+  font-size: 10px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+
+.background-credit a {
+  color: white;
+}
