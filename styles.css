@@ -12,7 +12,7 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 30%;
   height: 100vh;
   color: white;
 }
@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 160px;
+  margin-top: 20vh;
   height: 15vh;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -52,6 +52,10 @@ body {
   color: white;
 }
 
+.main-container {
+  width: 45%;
+}
+
 .introduction,
 .form-container,
 .button-container {
@@ -64,19 +68,25 @@ body {
 }
 
 .introduction {
-  /* background-color: #f8f8f8; */
   font-weight: 600;
-  font-size: 20px;
-  height: 35vh;
+  font-size: 18px;
+  height: 30vh;
   justify-content: left;
   align-content: flex-end;
   padding-bottom: 30px;
+  padding-right: 50px;
 }
 
 .form-container {
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-  padding-bottom: 30px;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.2);
   margin-bottom: 7px;
+  height: 30vh;
+}
+
+h3 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 label {
@@ -89,6 +99,7 @@ label {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  width: 75%;
 }
 
 .form-group {
@@ -96,20 +107,39 @@ label {
   flex-direction: column;
 }
 
-/* box shadow when selecting an input field */
-/* valid/invalid border color coding */
 input {
-  width: 250px;
+  width: 200px;
   height: 20px;
   padding-left: 10px;
   border: 1px solid;
-  border-color: #e4e4e4;
+  border-color: #e5e7eb;
   border-radius: 4px;
+}
+
+input:focus {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+input:hover {
+  background-color: #f8f8f8;
+}
+
+[type*="password"]:invalid {
+  border-color: red;
 }
 
 .button-container {
   padding-top: 20px;
-  padding-bottom: 14vh;
+  height: 30vh;
+}
+
+button:hover {
+  background-color: #6f885a;
+}
+
+.login-option a:hover,
+.background-credit a:hover {
+  color: #6f885a;
 }
 
 button {
@@ -120,6 +150,7 @@ button {
   border: 1px;
   border-radius: 7px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .login-option {
